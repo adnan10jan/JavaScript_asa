@@ -19,7 +19,7 @@ const arr2 = new Array(1,2,3,4)
 //onsole.log(myArr);
 
 
-// slice and splice //
+// slice and splice  and etc//
 
 const mynr = myArr.slice(1,3)
 
