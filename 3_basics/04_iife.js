@@ -5,5 +5,5 @@
 })();
 
 ((name) => {
-    console.log(`become master UI ${name}`);        // wheneves we use IIFE we have to end function by applying `;` 
+    console.log(`become master UI ${name}`);        // wheneves we use IIFE we have to end function by applying INTO IT`;` 
 })("kakarot")
