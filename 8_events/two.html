@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>adnan and javascript</h1>
+    <button id="start">Start></button>
+    <button id="stop">Stop></button>
+</body>
+<script>
+    const sayName = function() {
+        console.log("adnan", Date.now());
+    }
+
+    let intervalId;
+
+    const startInterval = function() {
+        if(!intervalId) {
+            intervalId = setInterval(sayName, 1000)
+            console.log('started');
+        }
+    }
+
+    const stopInterval = function() {
+        clearInterval(intervalId)
+        console.log('stopped');
+        //intervalId = null
+    }
+
+    document.querySelector('#start').addEventListener('click', startInterval)
+    document.querySelector('#stop').addEventListener('click', stopInterval)
+
+</script>
+</html>
