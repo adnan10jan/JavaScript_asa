@@ -22,5 +22,6 @@ class User {
 
 const adnan = new User("asa@123", "saif")
 console.log(adnan.email);
+console.log(adnan)
 console.log(adnan.password);
 
